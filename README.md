@@ -1,8 +1,12 @@
 # helmholtz
-Helmholtz-Hodge decomposition using fft
+Helmholtz-Hodge decomposition using Fortrier transformation
 
 Contains:
+
 helmholtz.py  -- python code for the decomposition
+
+helmholtz_real.py  -- alternative python code for the decomposition: Not using np.fft, slower, but takes careful account of Nyquist frequency when N is even. => Guarantees real decomposed V fields, and zero divergence of V_solenoidal
+
 v0_xyz_16_16_128.dat  -- sample vector field to be decomposed
 
 --------------------------------------
